@@ -1,0 +1,16 @@
+﻿@model List<_200395887_Lesson1.Models.Cars>
+
+@{
+    ViewBag.Title = "Cars List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@foreach (var car in Model)
+{
+    @car.ID
+    @car.Brand
+    @car.Model
+    @car.Type
+    @car.Year
+}
